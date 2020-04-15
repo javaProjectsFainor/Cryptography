@@ -29,10 +29,10 @@ public class Transposicao {
 		
 		for(int i = 0; i < lines; i++) {
 			for(int j = 0; j < (int)Math.ceil(word.length()/lines); j++) {
-				System.out.print(result[i][j]);
+				if(result[i][j] != 0) {
+					System.out.print(result[i][j]);
+				}
 			}
-			
-			System.out.print("\n");
 		}
 	}
 }
