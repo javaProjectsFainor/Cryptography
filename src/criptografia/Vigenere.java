@@ -40,7 +40,7 @@ public class Vigenere {
 			if(i < chave.length()) {
 				column = indexOf(chave.charAt(i));
 			} else if(i == chave.length()) {
-				column = 0;
+				column = indexOf(chave.charAt(0));
 			} else {
 				column = indexOf(chave.charAt(-(chave.length() - i)));
 			}
